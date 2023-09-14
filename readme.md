@@ -18,6 +18,18 @@
   ```
 ### 확인
 jpaTest와 jdbcTest의 로그와 실행시간의 차이를 확인합니다.
+- jpa
+<figure style="text-align: center;">
+  <img src="/readme-img/jpa.png" alt="jpa test image"/>
+  <figcaption><i>(그림: 유형환, © 2023. Kurly. All rights reserved.)</i></figcaption>
+</figure>
+
+- jdbc
+<figure style="text-align: center;">
+  <img src="/readme-img/jdbc.png" alt="jpa test image"/>
+  <figcaption><i>(그림: 유형환, © 2023. Kurly. All rights reserved.)</i></figcaption>
+</figure>
+
 
 ## 실행 조건
 `TestContainers` 기반이기 때문에 `Docker`가 설치된 환경에서 동작합니다.
