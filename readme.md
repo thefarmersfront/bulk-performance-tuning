@@ -8,14 +8,22 @@
 - JAVA 17 이상
 - Docker 🐳: `TestContainers` 기반이기 때문에 `Docker`가 설치된 환경에서 동작합니다.
 ### 실행 방법
-- jpa 테스트
-  ```shell
-  $ ./gradlew test --tests com.example.bulkinsert.BulkInsertApplicationTests.jpaTest
-  ```
-- jdbc 테스트 (jpa에서 성능 개선한 로직)
-  ```shell
-  $ ./gradlew test --tests com.example.bulkinsert.BulkInsertApplicationTests.jdbcTest
-  ```
+1. 리포지토리 복제 (Clone the repo)
+```shell
+git clone git@github.com:thefarmersfront/bulk-performance-tuning.git
+cd bulk-performance-tuning
+```
+
+2. jpa 테스트
+```shell
+./gradlew test --tests com.example.bulkinsert.BulkInsertApplicationTests.jpaTest
+```
+
+3. jdbc 테스트 (jpa에서 성능 개선한 로직)
+```shell
+./gradlew test --tests com.example.bulkinsert.BulkInsertApplicationTests.jdbcTest
+```
+
 ### 확인
 jpaTest와 jdbcTest의 로그와 실행시간의 차이를 확인합니다.
 - jpa
